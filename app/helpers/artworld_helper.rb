@@ -1,0 +1,2 @@
+module ArtworldHelper
+end
