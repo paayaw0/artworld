@@ -1,0 +1,14 @@
+<h1>Welcome to Artworld!</h1>
+
+<%= form_with model: Artwork.new, url: artworks_path do |form| %>
+  <%= form.text_field :title %>
+  <%= form.file_field :media %>
+  <%= form.submit 'upload' %>
+<% end %>
+
+<% @artworks.each do |artwork| %>
+  <p>
+    <%= image_tag artwork.media.variant(:medium) %>
+  </p>
+  <%= artwork.title %>
+<% end %>
