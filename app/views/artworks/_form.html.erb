@@ -1,0 +1,5 @@
+<%= form_with model: artwork, url: url do |form| %>
+  <%= form.text_field :title %>
+  <%= form.file_field :media %>
+  <%= form.submit 'upload' %>
+<% end %>
