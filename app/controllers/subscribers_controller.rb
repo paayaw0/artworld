@@ -16,6 +16,7 @@ class SubscribersController < ApplicationController
     else
       flash.now[:alert] = 'failed to save'
     end
+    redirect_to subscribers_path
   end
 
 
