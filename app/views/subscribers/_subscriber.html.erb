@@ -1,0 +1,3 @@
+<%= turbo_frame_tag "subscribers-target" do %>
+    <h2><%= (subscriber&.count_jump || 0).to_fs(:delimited) %> subscribers!</h2>
+<% end %>

@@ -3,12 +3,6 @@ class ArtworksController < ApplicationController
     @artworks = Artwork.all
   end
 
-  def show
-  end
-
-  def new
-  end
-
   def create
     artwork = Artwork.new(artwork_params)
 
@@ -19,6 +13,7 @@ class ArtworksController < ApplicationController
     end
     redirect_to artworks_path
   end
+
 
   private 
 
