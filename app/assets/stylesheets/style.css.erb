@@ -15,7 +15,7 @@ body {
   background: url(<%= asset_path "art.jpg" %>) fixed center no-repeat;
   background-size: cover;
   position: relative;
-   min-height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-rows: 1fr auto;
 }
@@ -778,7 +778,9 @@ section {
   padding: 30px 0;
   color: #fff;
   font-size: 14px;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 #footer .copyright {
