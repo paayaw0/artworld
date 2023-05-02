@@ -5,6 +5,6 @@ class Subscriber < ApplicationRecord
   validates :email, format: { with: EMAIL_REGEXP }
 
   after_create_commit -> {
-    broadcast_replace_to "subscribers-count", target: "subscribers-target"
+    broadcast_replace_to "subscribers-count", target: "subscribers-target", partial: "subscribers/subscribers_count", locals: { subscribers_count: Subscriber.all.size }
   }
 end
