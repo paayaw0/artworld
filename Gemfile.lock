@@ -95,6 +95,7 @@ GEM
       pkg-config (>= 1.3.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    hiredis (0.6.3)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     image_processing (1.12.2)
@@ -228,6 +229,7 @@ DEPENDENCIES
   capybara
   debug
   glib2 (~> 4.1)
+  hiredis
   image_processing (>= 1.2)
   importmap-rails
   jbuilder
